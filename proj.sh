@@ -32,3 +32,10 @@ echo --------'\n'4- maximum use of urls
 for item in `less $file|awk '{print $11}'|sort|uniq -c|sort -n -r|head -n 2`; do
 	echo $item
 done
+
+#-----------
+echo --------'\n'5- maximum use of operating system
+
+for item in `less $file|awk '{print $14}'|sort|uniq -c|sort -n -r|head -n 1`; do
+	echo $item
+done
