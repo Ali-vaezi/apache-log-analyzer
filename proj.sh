@@ -9,3 +9,5 @@ for item in `less $file|awk '{print $11}'`; do
 		c=$((c+1))
 	fi
 done
+
+echo 1- tedad bazdid haye shahroodut.ac.ir : $c
