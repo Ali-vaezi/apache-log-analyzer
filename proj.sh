@@ -18,3 +18,10 @@ echo --------'\n'2- 10 maximum ip address
 for item in `less $file|awk '{print $1}'|sort|uniq -c|sort -n -r|head -n 10`; do
 	echo $item
 done
+
+#-----------
+echo --------'\n'3- maximum use of browsers
+
+for item in `less $file|awk '{print $12}'|sort|uniq -c|sort -n -r|head -n 1`; do
+	echo $item
+done
